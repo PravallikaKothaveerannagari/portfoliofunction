@@ -3,7 +3,7 @@ import azure.functions as func
 import api.htmx as htmx
 import api.table as table
 
-app = func.FunctionApp(http_auth_level=func.AuthLevel.FUNCTION)
+app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
 
 
 @app.function_name(name="about")
